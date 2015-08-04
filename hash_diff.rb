@@ -2,8 +2,6 @@ o =  { :name => "Tim", :age => 32, :location => { :state => "MA", :city => "Bost
 
 n =  { :name => "Tim", :age => 33, :location => { :state => "CT", :city => "Boston" }}
 
-difference = { :age => [32, 33], :location => { :state => ["MA", "CT"] }}
-
 def diff(o, n)
   new_hash = {}
   unless o == n
@@ -21,4 +19,3 @@ def diff(o, n)
 end
 
 puts diff(o, n)
-
